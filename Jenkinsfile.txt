@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('SCM') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '6de08d07-93e4-4fa9-826f-72fdcf646110', url: 'https://github.com/ulchatur/new_docker.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '	2b064120-d6dc-440f-a5ee-bc5bf29c15a8', url: 'https://github.com/ulchatur/docker.git']]])
             }
         }
         stage ('Deployment') {
